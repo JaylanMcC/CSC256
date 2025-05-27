@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaylan McCoy - Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jaylan McCoy</h1>
+        <p><strong>Major:</strong> Network Security</p>
+        <p><strong>Email:</strong> <a href="mailto:jaymccoy@uat.edu">jaymccoy@uat.edu</a></p>
+        <p><strong>Expected Graduation:</strong> May 2026</p>
+    </div>
+</body>
+</html>
