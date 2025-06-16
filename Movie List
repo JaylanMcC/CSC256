@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie List</title>
+</head>
+<body>
+
+  <h2>Enter Movie Titles</h2>
+
+  <input type="text" id="movieInput" placeholder="Type a movie title">
+  <button onclick="addMovie()">Add Movie</button>
+  <button onclick="showList()">Show List</button>
+  <button onclick="showInNewWindow()">Show in New Window</button>
+  <button onclick="resetList()">Reset</button>
+
+  <h3>Movie List:</h3>
+  <div id="movieList"></div>
+
+  <script>
+    let movies = [];
+
+    function addMovie() {
+      let input = document.getElementById("movieInput");
+      let title = input.value.trim();
+
+      if (title !== "") {
+        movies.push(title);
+        input.value = "";
+      }
+    }
+
+    function showList() {
+      let listArea = document.getElementById("movieList");
+      let sorted = movies.slice().sort();
+      listArea.innerHTML = sorted.join("<br>");
+    }
+
+    function showInNewWindow() {
+      let sorted = movies.slice().sort();
+      let newWin = window.open("", "MovieListWindow", "width=300,height=300");
+      newWin.document.write("<h3>Movie List</h3>");
+      newWin.document.write(sorted.join("<br>"));
+    }
+
+    function resetList() {
+      movies = [];
+      document.getElementById("movieList").innerHTML = "";
+      document.getElementById("movieInput").value = "";
+    }
+  </script>
+
+</body>
+</html>
