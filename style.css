@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  background: #291e0f;
+}
+
+img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+}
