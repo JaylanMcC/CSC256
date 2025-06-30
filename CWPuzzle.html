@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crossword Puzzle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      text-align: center;
+      padding: 20px;
+      color: navy;
+    }
+
+    h1 {
+      color: orange;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(5, 40px);
+      grid-template-rows: repeat(5, 40px);
+      gap: 2px;
+      justify-content: center;
+      margin: 20px auto;
+    }
+
+    .cell {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #444;
+      background-color: #eee;
+      text-transform: uppercase;
+      font-size: 18px;
+      text-align: center;
+      line-height: 40px;
+      color: navy;
+    }
+
+    .empty {
+      background-color: #fff;
+      border: none;
+    }
+
+    .clues {
+      margin-top: 20px;
+      text-align: left;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .clues h3 {
+      color: orange;
+    }
+
+    .clues p {
+      color: navy;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Crossword</h1>
+
+  <div class="grid">
+    <!-- Row 1 -->
+    <div class="cell">W</div>
+    <div class="cell">A</div>
+    <div class="cell">V</div>
+    <div class="cell">E</div>
+    <div class="cell empty"></div>
+
+    <!-- Row 2 -->
+    <div class="cell empty"></div>
+    <div class="cell empty"></div>
+    <div class="cell empty"></div>
+    <div class="cell">V</div>
+    <div class="cell empty"></div>
+
+    <!-- Row 3 -->
+    <div class="cell empty"></div>
+    <div class="cell empty"></div>
+    <div class="cell empty"></div>
+    <div class="cell">E</div>
+    <div class="cell empty"></div>
+
+    <!-- Row 4 -->
+    <div class="cell empty"></div>
+    <div class="cell empty"></div>
+    <div class="cell empty"></div>
+    <div class="cell">N</div>
+    <div class="cell empty"></div>
+
+    <!-- Row 5 -->
+    <div class="cell">E</div>
+    <div class="cell">A</div>
+    <div class="cell">R</div>
+    <div class="cell">T</div>
+    <div class="cell">H</div>
+
+    
+  <div class="clues" id="clue-list">
+    <h3>Clues:</h3>
+  </div>
+
+  <script>
+    const clues = [
+      "1 Across: Ocean movement you can surf.",
+      "2 Down: Something you might attend, like a concert or party.",
+      "3 Across: The planet we live on.",
+     
+ ];
+
+    const clueList = document.getElementById("clue-list");
+
+    for (let i = 0; i < clues.length; i++) {
+      const p = document.createElement("p");
+      p.textContent = clues[i];
+      clueList.appendChild(p);
+    }
+     </script>
+
+</body>
+</html>
