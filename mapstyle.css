@@ -1,0 +1,142 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #e74c3c;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.sitemap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.level {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.page-box {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    min-width: 180px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.page-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.page-box h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+}
+
+.page-box p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Different colors for each level */
+.page-box.home {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    border-color: #c0392b;
+}
+
+.page-box.main {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border-color: #2980b9;
+}
+
+.page-box.feature {
+    background: linear-gradient(135deg, #27ae60, #229954);
+    color: white;
+    border-color: #229954;
+}
+
+.page-box.support {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: white;
+    border-color: #8e44ad;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #666;
+    margin: 10px 0;
+}
+
+.info-box {
+    background: #f8f9fa;
+    border-left: 5px solid #3498db;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.info-box h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.info-box p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .level {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .page-box {
+        min-width: 250px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
