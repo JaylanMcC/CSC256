@@ -1,0 +1,33 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+#email-box {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#safeBtn {
+  background: green;
+  color: white;
+}
+
+#phishBtn {
+  background: red;
+  color: white;
+}
